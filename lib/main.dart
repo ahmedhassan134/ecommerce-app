@@ -1,5 +1,6 @@
 import 'package:ecommerce/core/utils/app_routes.dart';
 import 'package:ecommerce/core/utils/app_theme.dart';
+import 'package:ecommerce/ui/screens/auth/forget_screen/screen/forget_screen.dart';
 import 'package:ecommerce/ui/screens/auth/login_screen/screens/login_screen.dart';
 import 'package:ecommerce/ui/screens/auth/signup_screen/screens/signup_screen.dart';
 import 'package:ecommerce/ui/screens/home_screen/screens/home_screen.dart';
@@ -17,7 +18,7 @@ class EcommerceApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: AppRoutes.welcomeScreen,
+      initialRoute: AppRoutes.forgetPassword,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
       themeMode: ThemeMode.dark,
@@ -26,6 +27,7 @@ class EcommerceApp extends StatelessWidget {
         AppRoutes.loginScreen:(context)=>LoginScreen(),
         AppRoutes.signupScreen:(context)=>RegisterScreen(),
         AppRoutes.homeScreen:(context)=>HomeScreen(),
+        AppRoutes.forgetPassword:(context)=>ForgetPassword(),
       },
 
     );
