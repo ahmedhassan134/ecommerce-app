@@ -1,4 +1,5 @@
 import 'package:ecommerce/core/utils/app_routes.dart';
+import 'package:ecommerce/core/utils/app_theme.dart';
 import 'package:ecommerce/ui/screens/auth/login_screen/screens/login_screen.dart';
 import 'package:ecommerce/ui/screens/auth/signup_screen/screens/signup_screen.dart';
 import 'package:ecommerce/ui/screens/home_screen/screens/home_screen.dart';
@@ -17,6 +18,9 @@ class EcommerceApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.welcomeScreen,
+      theme: AppTheme.light,
+      darkTheme: AppTheme.dark,
+      themeMode: ThemeMode.light,
       routes: {
         AppRoutes.welcomeScreen:(context)=>WelcomeScreen(),
         AppRoutes.loginScreen:(context)=>LoginScreen(),
