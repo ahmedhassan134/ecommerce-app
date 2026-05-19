@@ -35,7 +35,7 @@ class ForgetPassword extends StatelessWidget {
                 keyboardType: TextInputType.emailAddress,
                 textInputAction: TextInputAction.next,
                 validator: AppValidator.validateEmail,
-                prefixIcon:Icon(Icons.lock),
+                prefixIcon:Icon(Icons.email_outlined),
               ),
               CustomElevatedButton(onpPressed: () {}, text: "Verify Email",    colorText: Colors.white,
                 backgroundColor: Colors.pink,),
