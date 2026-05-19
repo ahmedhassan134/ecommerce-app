@@ -20,11 +20,11 @@ class EcommerceApp extends StatelessWidget {
       initialRoute: AppRoutes.welcomeScreen,
       theme: AppTheme.light,
       darkTheme: AppTheme.dark,
-      themeMode: ThemeMode.light,
+      themeMode: ThemeMode.dark,
       routes: {
         AppRoutes.welcomeScreen:(context)=>WelcomeScreen(),
         AppRoutes.loginScreen:(context)=>LoginScreen(),
-        AppRoutes.signupScreen:(context)=>SignupScreen(),
+        AppRoutes.signupScreen:(context)=>RegisterScreen(),
         AppRoutes.homeScreen:(context)=>HomeScreen(),
       },
 
