@@ -97,7 +97,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           keyboardType: TextInputType.emailAddress,
                           textInputAction: TextInputAction.next,
                           validator: AppValidator.validateEmail,
-                          prefixIcon:  Icon(Icons.lock),
+                          prefixIcon:  Icon(Icons.email_outlined),
                         ),
                         CustomTextFormField(
                           controller: passwordController,
